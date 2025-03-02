@@ -1,12 +1,14 @@
-import EmpDetailsList from "../Componants/EmpDetailsList"
-import NavBar from "../Componants/NavBar"
-import Header from "../Componants/Header"
+import NavBar from "../Componants/NavBar";
+
+import PageData from "../Componants/PageData";
+
 export default function HomePage() {
-return (
-    <>
-    <NavBar/>
-    <Header/>
-    <EmpDetailsList/>
-    </>
-)
+  return (
+    <div className="min-h-screen flex flex-col">
+      <NavBar />
+      <div className="flex-grow flex items-center justify-center">
+        <PageData data={"Hi, Welcome to the Employee Management System"} />
+      </div>
+    </div>
+  );
 }
