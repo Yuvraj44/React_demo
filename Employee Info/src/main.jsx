@@ -14,8 +14,10 @@ import HomePageData from "./Componants/PageData.jsx";
 import DeleteEmployee from "./Componants/DeleteEmployee.jsx";
 import DeleteEmpPage from "./Pages/DeleteEmpPage.jsx";
 
+import EmpDetailsList from "./Componants/EmpDetailsList.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
+    
   </StrictMode>,
 );
