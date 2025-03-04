@@ -1,6 +1,7 @@
 import NavBar from "../Componants/NavBar";
 import AddEmployee from "../Componants/AddEmployee";
 import PageData from "../Componants/PageData";
+import UpdateEmployee from "../Componants/UpdateEmployee";
 
 export default function UpdateEmpPage() {
   return (
@@ -12,7 +13,7 @@ export default function UpdateEmpPage() {
             <PageData data={"Update"} />
           </div>
           <div className="">
-            <AddEmployee />
+            <UpdateEmployee />
           </div>
         </div>
       </div>
