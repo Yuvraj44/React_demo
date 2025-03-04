@@ -13,12 +13,13 @@ import UpdateEmpPage from "./Pages/UpdateEmpPage.jsx";
 import HomePageData from "./Componants/PageData.jsx";
 import DeleteEmployee from "./Componants/DeleteEmployee.jsx";
 import DeleteEmpPage from "./Pages/DeleteEmpPage.jsx";
+import UserHomePage from "./Pages/UserHomePage.jsx"
 
 import EmpDetailsList from "./Componants/EmpDetailsList.jsx";
 import UpdateEmployee from "./Componants/UpdateEmployee.jsx";
+import UserNavBar from "./Componants/UserNavBar.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-    {/* <UpdateEmployee/> */}
   </StrictMode>,
 );
