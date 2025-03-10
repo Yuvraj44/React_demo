@@ -8,7 +8,7 @@ import UpdateEmpPage from "./Pages/UpdateEmpPage";
 import DeleteEmpPage from "./Pages/DeleteEmpPage";
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
-import UserHomePage from "./Pages/UserHomePage"
+
 import SearchBarById from "./Componants/SeachBarById";
 import SearchBarByDept from "./Componants/SearchBarByDept";
 import SearchPageByDept from "./Pages/SearchPageByDept";
@@ -24,7 +24,7 @@ const EmployeeRoutes = () => {
         <Route path="" element={<LoginPage />}></Route>
         <Route path="signout" element={<LoginPage />}></Route>
         <Route path="admin" element={<HomePage />}></Route>
-        <Route path="user" element={<UserHomePage />}></Route>
+        <Route path="user" element={<HomePage />}></Route>
         <Route path="searchById" element={<SearchPageById />}></Route>
         <Route path="searchByDept" element={<SearchPageByDept />}></Route>
         <Route path="searchByName" element={<SearchPageByName />}></Route>

@@ -8,8 +8,9 @@ export default function LogIn() {
     username: "",
     password: "",
   });
+
   const navigate = useNavigate();
-  
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -20,7 +21,7 @@ export default function LogIn() {
     const dataToSend = {
       userId: 0,
       ...formData,
-      isAdmin:true
+      isAdmin: true
     };
 
 
@@ -34,17 +35,17 @@ export default function LogIn() {
       });
 
       const data = await response.json();
-    console.log("Response Data:", data);
-      
+      console.log("Response Data:", data);
+
       if (data.success) {
-        alert("Logged IN"); 
+        alert("Logged IN");
         localStorage.setItem("role", data.role);
         navigate(data.role === "admin" ? "/admin" : "/user");
-        
+
       } else {
-        alert("Invalid credentials"); 
+        alert("Invalid credentials");
       }
-    
+
     } catch (error) {
       console.error("Error:", error);
     }
@@ -53,9 +54,9 @@ export default function LogIn() {
 
 
 
-  
 
-    
+
+
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -87,7 +88,7 @@ export default function LogIn() {
                   required
                   value={formData.username}
                   onChange={handleChange}
-                  
+
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
@@ -117,7 +118,7 @@ export default function LogIn() {
                   type="password"
                   required
                   value={formData.password}
-                onChange={handleChange}
+                  onChange={handleChange}
                   autoComplete="current-password"
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
