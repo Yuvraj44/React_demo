@@ -38,6 +38,7 @@ export default function LogIn() {
       
       if (data.success) {
         alert("Logged IN"); 
+        localStorage.setItem("role", data.role);
         navigate(data.role === "admin" ? "/admin" : "/user");
         
       } else {

@@ -11,7 +11,7 @@ export default function DeleteEmployee() {
     }
 
     try {
-      const response = await fetch(`https://localhost:44315/api/employee/${deleteId}`, {
+      const response = await fetch(`https://localhost:44315/api/employees/${deleteId}`, {
         method: "DELETE",
       });
 

@@ -1,13 +1,12 @@
 import EmpDetailsList from "../Componants/EmpDetailsList";
 import NavBar from "../Componants/NavBar";
 import PageData from "../Componants/PageData";
-import SearchBar from "../Componants/SeachBar";
 
-export default function SearchPage() {
+
+export default function ViewEmployeePage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col mt-20">
       <NavBar />
-      <SearchBar />
       <EmpDetailsList />
     </div>
   );
